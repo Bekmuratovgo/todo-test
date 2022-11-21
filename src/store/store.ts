@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import adminReducer from "./adminSlice";
+import todoReducer from "./todoSlice";
 
 const rootReducer = combineReducers({
-    adminReducer,
+    todoReducer,
 })
 
 export const setupStore = () => {
@@ -10,3 +10,6 @@ export const setupStore = () => {
         reducer: rootReducer,
     })
 }
+export type State = ReturnType<typeof rootReducer>
+
+

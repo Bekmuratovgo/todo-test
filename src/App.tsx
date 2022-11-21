@@ -1,10 +1,11 @@
-import React from 'react';
-import './App.css';
+import React, { FC, ReactElement } from 'react';
+import './App.less';
+import Main from './page/Main';
 
-function App() {
+const  App: FC = (): ReactElement => {
   return (
     <div className="App">
-      
+      <Main />
     </div>
   );
 }
